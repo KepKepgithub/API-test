@@ -27,11 +27,14 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: brown;
+  background: #252829;
+}
+.moreInfo .modalBtn {
+  display: block;
 }
 .moreInfo img {
   max-width: 400px;
 }
 .moreInfo button {
-  display: block;
+  display: inline-block;
 }

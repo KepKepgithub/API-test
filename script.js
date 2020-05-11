@@ -41,9 +41,9 @@ function createCard(data){
     const nameNode = document.createElement('h1');
     nameNode.innerHTML =  data.name;
     const populationNode = document.createElement('p');
-    populationNode.innerHTML = data.population;
+    populationNode.innerHTML = `Population: <span>${data.population}</span>`;
     const regionNode = document.createElement('p');
-    regionNode.innerHTML = data.region;
+    regionNode.innerHTML = `Region: <span>${data.region}</span>`;
     const capitalNode = document.createElement('p');
     capitalNode.innerHTML = `Capital: <span>${data.capital}</span>`;
     // appends all the text/img to the cards
@@ -140,7 +140,6 @@ function createCard(data){
                             newLangArr.push(e.name);
                     })
                     modalLanguages.innerHTML = `Languages: ${newLangArr.join(',')}`;
-                    
                 })
             })
         })
